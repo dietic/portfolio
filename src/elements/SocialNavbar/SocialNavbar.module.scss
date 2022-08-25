@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+div.container{
+  position: fixed;
+  left: 30px;
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  div.socialItem {
+    transition: margin-bottom ease-out .1s;
+    a {
+      text-decoration: none;
+      color: $blue200;
+      &:hover {
+        color: $orange500;
+      }
+    }
+    &:hover {
+      margin-bottom: 5px;
+    }
+  }
+  div.verticalDivider {
+    width: 2px;
+    background: $blue200;
+    height: 100px;
+  }
+}
